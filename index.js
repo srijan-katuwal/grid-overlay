@@ -10,9 +10,9 @@ window.onload = function () {
     const node = document.createElement("div");
     node.className = "grid-overview";
 
-    node.style.display = "none";
     node.style.opacity = config.opacity || "0.2";
     node.style.gap = config.gap || "40px";
+    node.style["max-width"] = config["max-width"] || "100%";
 
     // add columns to node
     const columnLength = config.columns || 12;
@@ -68,7 +68,9 @@ window.onload = function () {
         node.style.left = "0";
         node.style.width = "100vw";
         node.style.height = "100vh";
-        node.style.display = "grid";
+        node.style.display = "none";
+        node.style.left = "50%";
+        node.style["transform"] = "translateX(-50%)";
         node.style["grid-auto-columns"] = "1fr";
         node.style["grid-auto-flow"] = "column";
         node.style["pointer-events"] = "none";
