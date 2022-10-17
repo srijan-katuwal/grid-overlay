@@ -58,7 +58,7 @@ window.onload = function () {
         if (toggle) {
             node.style.display = "none";
         } else {
-            node.style.display = "";
+            node.style.display = "grid";
         }
         toggle = !toggle;
     }
