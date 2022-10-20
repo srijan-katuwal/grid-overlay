@@ -3,7 +3,7 @@
 An overlay for frontend UI developers. It allows you to see alignment of elements on a screen.
 ![Example](example.png)
 
-#### to use
+#### How to use
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/@srijan-katuwal/grid-overlay@1.0.1/index.js"></script>
